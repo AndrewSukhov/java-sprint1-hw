@@ -29,7 +29,7 @@ public class StepTracker {
         stepsCount.put("Декабрь", calendar);
     }
     //todo написать метод сейвСтепс, который сохранит в Хеш таблицу три переменные.
-    public void (String month, int day, int steps) {
+    public void saveSteps(String month, int day, int steps) {
         if (steps < 0) {
             System.out.println("Количество шагов должно быть неотрицательным");
         }
