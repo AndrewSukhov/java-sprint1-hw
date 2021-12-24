@@ -34,7 +34,7 @@ public class StepTracker {
             System.out.println("Количество шагов должно быть неотрицательным");
         }
         if (stepsCount.containsKey(month)) {
-            calendar.add(day - 1, steps);
+            calendar.set(day - 1, steps);
             stepsCount.put(month, calendar);
             System.out.println("Данные сохранены");
         } else {
@@ -59,7 +59,7 @@ public class StepTracker {
             int avgSteps = totalSumSteps / calendar.size();
             System.out.println("Общее количество шагов за месяц: " + totalSumSteps);
             System.out.println("Максимальное количество шагов - " + maxSteps +
-                    "было пройдено в день номер" + dayOfMaxSteps);
+                    " было пройдено в день номер " + dayOfMaxSteps);
             System.out.println("Среднее количество шагов в день: " + avgSteps);
             //todo Количество сожжённых килокалорий;
             // todo Лучшая серия targetStepCount

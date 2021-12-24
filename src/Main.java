@@ -15,7 +15,7 @@ public class Main {
 
             if (command == 1) {
                 System.out.println("Введите название месяца в формате: \"Январь\", \"Февраль\" и т.д.");
-                String month = scanner.nextLine();
+                String month = scanner.next();
                 System.out.println("Введите номер дня от 1 до 30.");
                 int day = scanner.nextInt();
                 System.out.println("Введите количество пройденных шагов.");
@@ -24,7 +24,7 @@ public class Main {
             } else if (command == 2) {
                 //todo Написать метод принтСтатистик который Напечатает статистику за определённый месяц
                 System.out.println("Введите название месяца в формате: \"Январь\", \"Февраль\" и т.д.");
-                String month = scanner.nextLine();
+                String month = scanner.next();
                 stepTracker.printStatistic(month);
             } else if (command == 3) {
                 //Метод changePurposeOfDailySteps Изменить цель по количеству шагов в день
@@ -36,7 +36,7 @@ public class Main {
         }
     }
     public static void printMenu() {
-        System.out.println("Что вы хотите сделать?" +
+        System.out.println("Что вы хотите сделать? " +
                 "Введите число, соответствующее пункту меню");
         System.out.println("1 - Ввести количество шагов за определённый день");
         System.out.println("2 - Напечатать статистику за определённый месяц");
