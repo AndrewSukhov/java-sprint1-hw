@@ -1,10 +1,9 @@
 public class Converter {
-    //todo
+    static double lengthStep = 0.75d;
+    static double calorieStep = 50d;
+
+    static void convert(int steps) {
+        System.out.println("Пройденная дистанция (в км): " + (steps * lengthStep / 1000));
+        System.out.println("Количество сожжённых килокалорий: " + (steps * calorieStep / 1000));
+    }
 }
-/*
-Класс Converter
-В этом классе осуществляется преобразование шагов в километры и калории.
-Для подсчёта дистанции можно считать, что один шаг равен 75 см.
-Для подсчёта количества сожжённых килокалорий можно считать,
-что 1 шаг = 50 калорий, 1 килокалория = 1 000 калорий.
- */
