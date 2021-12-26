@@ -1,9 +1,14 @@
 import java.util.Scanner;
 
-//Счетчик калорий.
+// Счетчик калорий.
 
+/*
+В классе Main реализован основной цикл приложения — считывание команд и
+вызов соответствующих методов основного класса приложения — StepTracker.
+ */
 public class Main {
 
+    // Метод реализует ввод данных пользователя, вывод меню и запрошенной информации
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StepTracker stepTracker = new StepTracker();
@@ -37,6 +42,7 @@ public class Main {
         }
     }
 
+    // Печать меню приложения
     public static void printMenu() {
         System.out.println("Что вы хотите сделать? " +
                 "Введите число, соответствующее пункту меню");
